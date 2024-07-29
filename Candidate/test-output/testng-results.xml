@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-04T22:59:29 SGT" name="Default suite" finished-at="2023-07-04T23:01:48 SGT" duration-ms="138493">
+    <groups>
+    </groups>
+    <test started-at="2023-07-04T22:59:29 SGT" name="Default test" finished-at="2023-07-04T23:01:48 SGT" duration-ms="138493">
+      <class name="ATS_CandidateDetails.CandidateDetails">
+        <test-method signature="information()[pri:1, instance:ATS_CandidateDetails.CandidateDetails@4dbb42b7]" started-at="2023-07-04T22:59:30 SGT" name="information" finished-at="2023-07-04T22:59:48 SGT" duration-ms="18224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- information -->
+        <test-method signature="dayforce()[pri:2, instance:ATS_CandidateDetails.CandidateDetails@4dbb42b7]" started-at="2023-07-04T22:59:48 SGT" name="dayforce" finished-at="2023-07-04T22:59:58 SGT" duration-ms="10235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dayforce -->
+        <test-method signature="ActionTemplate()[pri:3, instance:ATS_CandidateDetails.CandidateDetails@4dbb42b7]" started-at="2023-07-04T22:59:58 SGT" name="ActionTemplate" finished-at="2023-07-04T23:00:13 SGT" duration-ms="15095" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ActionTemplate -->
+        <test-method signature="JobEmail()[pri:4, instance:ATS_CandidateDetails.CandidateDetails@4dbb42b7]" started-at="2023-07-04T23:00:13 SGT" name="JobEmail" finished-at="2023-07-04T23:00:32 SGT" duration-ms="18986" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JobEmail -->
+        <test-method signature="SelectStatus()[pri:5, instance:ATS_CandidateDetails.CandidateDetails@4dbb42b7]" started-at="2023-07-04T23:00:32 SGT" name="SelectStatus" finished-at="2023-07-04T23:00:55 SGT" duration-ms="23274" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //select[contains(.,'07:30')] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f...}, goog:chromeOptions: {debuggerAddress: localhost:9222}, pageLoadStrategy: normal, platformName: ANY, proxy: Proxy(), se:cdp: ws://localhost:9222/devtool..., se:cdpVersion: 114.0.5735.199, setWindowRect: false, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9f2c3fb0d3fd6e7deb2635cf52964ead]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //select[contains(.,'07:30')] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f...}, goog:chromeOptions: {debuggerAddress: localhost:9222}, pageLoadStrategy: normal, platformName: ANY, proxy: Proxy(), se:cdp: ws://localhost:9222/devtool..., se:cdpVersion: 114.0.5735.199, setWindowRect: false, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9f2c3fb0d3fd6e7deb2635cf52964ead
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at ATS_CandidateDetails.CandidateDetails.SelectStatus(CandidateDetails.java:273)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectStatus -->
+        <test-method signature="assess()[pri:6, instance:ATS_CandidateDetails.CandidateDetails@4dbb42b7]" started-at="2023-07-04T23:00:55 SGT" name="assess" finished-at="2023-07-04T23:01:17 SGT" duration-ms="21123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assess -->
+        <test-method signature="clear()[pri:7, instance:ATS_CandidateDetails.CandidateDetails@4dbb42b7]" started-at="2023-07-04T23:01:17 SGT" name="clear" finished-at="2023-07-04T23:01:48 SGT" duration-ms="31434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear -->
+      </class> <!-- ATS_CandidateDetails.CandidateDetails -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
